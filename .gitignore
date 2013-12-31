@@ -1,0 +1,11 @@
+/.idea/
+/.yardoc/
+/.bundle/
+/pkg/
+Gemfile.lock
+.DS_Store
+/tmp/
+/doc/
+/features/reports
+/spec/reports
+/vendor/
