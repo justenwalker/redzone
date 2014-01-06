@@ -44,12 +44,13 @@ Usage
 
 ```
 RedZone commands:
-  redzone generate DIR    # Generates a bind database files into the given directory.
-  redzone help [COMMAND]  # Describe available commands or one specific command
-  redzone version         # Shows the current version of redzone
+  redzone generate [DIRECTORY]  # Generates a bind database files into the given DIRECTORY. If DIRECTORY is not supplied, it defaults to '/var/named'
+  redzone help [COMMAND]        # Describe available commands or one specific command
+  redzone version               # Shows the current version of redzone
 
 Options:
-  [--zones=ZONES]  # RedZone zone file. (Default: /etc/redzone/zones.yml)
+  [--zones=ZONES]  # RedZone zone configuration.
+                   # Default: /etc/redzone/zones.yml
 ```
 
 ### Generating zone databases
