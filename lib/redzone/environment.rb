@@ -13,6 +13,11 @@ module RedZone
     def self.default_zonefile
       self.default_etc.join('zones.yml')
     end
+    # Get the default location of the zone file
+    # @return [Pathname] default zones.yml path
+    def self.default_var_named
+      Pathname.new('/var/named')
+    end
     # Get the default location of the config file
     # @return [Pathname] default config.yml path
     def self.default_configfile

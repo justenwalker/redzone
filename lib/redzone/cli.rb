@@ -14,11 +14,13 @@ module RedZone
     #  RedZone configuration file. (Default: #{RedZone::Environment.default_configfile})
     #eos
   
-    desc 'generate DIR', <<-eos.strip
-      Generates a bind database files into the given directory.
+    desc 'generate [DIRECTORY]', <<-eos.strip
+      Generates a bind database files into the given DIRECTORY.
+      If DIRECTORY is not supplied, it defaults to '#{RedZone::Environment.default_var_named}'
     eos
     #  Generates a bind database files into the given directory.
-    def generate(dir)
+    def generate(dir=nil)
+      target = dir || RedZone::Environment.default_var_named.to_s
       c = ZoneConfig.new(options[:zones])
       writer = ZonefileWriter.new(c)
       writer.write_zones(Pathname.new(dir))
