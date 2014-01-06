@@ -1,3 +1,5 @@
+require 'pathname'
+
 module RedZone
   # RedZone environment properties
   module Environment
