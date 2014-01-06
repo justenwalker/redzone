@@ -7,8 +7,8 @@ module RedZone
   # RedZone Command-line actions
   class Cli < Thor
     package_name 'RedZone'
-    class_option :zones, :type => :string, :desc => <<-eos.strip
-      RedZone zone file. (Default: #{RedZone::Environment.default_zonefile})
+    class_option :zones, :type => :string, :default => RedZone::Environment.default_zonefile ,:desc => <<-eos.strip
+      RedZone zone configuration.
     eos
     #class_option :config, :type => :string, :desc => <<-eos.strip
     #  RedZone configuration file. (Default: #{RedZone::Environment.default_configfile})
