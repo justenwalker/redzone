@@ -3,10 +3,9 @@
 Introduction
 ------------
 
-RedZone is a command-line utility for generating BIND DNS zone files from a YAML file. The tools follows the
-UNIX philosophy and therefore does not attempt to do anything besides this.
+RedZone is a command-line utility for generating BIND DNS zone files from a YAML file.
 
-RedZone was inspired by Daniel P. Berrange's [NoZone](http://search.cpan.org/~danberr/NoZone-1.0/lib/NoZone.pm) i
+RedZone was inspired by Daniel P. Berrange's [NoZone](http://search.cpan.org/~danberr/NoZone-1.0/lib/NoZone.pm)
 script which does something very similar in Perl.
 The notable differences are:
  - Added support for reverse-dns generation
@@ -17,7 +16,7 @@ The notable differences are:
 Disclaimer
 ----------
 
-This gem was just released (pre 1.0) and probably doesn't have everything (or anything) you want yet.
+This gem was just released (pre 1.0) and is not ready for production use yet.
 
 During pre 1.0, things may change that break backwards compatibility between releases. Most likely these breaking
 changes would be related to the YAML file syntax.
@@ -48,7 +47,7 @@ Options:
 
 - Create a zones.yml file (See [zones.yml.example]) in `/etc/redzone`
 - Execute `redzone generate /var/named`
-- Each zone and reverse record database should be present in /var/named
+- Each zone and reverse record database should be present in `/var/named`
 
 For example, if your zone.yml file is like the zones.yml.example file
 then the resulting db files are:
@@ -79,6 +78,6 @@ Please include a reproducible test case.
 License
 -------
 
-Copyright (c) 2013 Justen Walker.
+Copyright (c) 2014 Justen Walker.
 
-Released under the terms of the MIT License. For further information, please see the file [LICENSE.md].
+Released under the terms of the MIT License. For further information, please see the file `LICENSE.md`.
