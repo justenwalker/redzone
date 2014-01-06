@@ -33,7 +33,10 @@ See the [Issue Tracker](https://github.com/justenwalker/redzone/issues)
 Installation
 ------------
 
-`gem install redzone`
+```
+$ gem install redzone
+```
+### gem install redzone
 
 Usage
 -----
@@ -51,17 +54,21 @@ Options:
 ### Generating zone databases
 
 - Create a zones.yml file (See [zones.yml.example]) in `/etc/redzone`
-- Execute `redzone generate /var/named`
+- Execute `redzone generate /var/named/data`
 - Each zone and reverse record database should be present in `/var/named`
 
 For example, if your zone.yml file is like the zones.yml.example file
 then the resulting db files are:
-- `0.0.0.0.0.0.0.0.0.0.c.f.ip6.arpa.db`
-- `1.168.192.in-addr.arpa.db`
-- `32.12.in-addr.arpa.db`
-- `9.8.7.6.4.3.2.1.1.0.0.2.ip6.arpa.db`
-- `qa.redzone.com.db`
-- `redzone.com.db`
+
+```
+$ ls -1 /var/named/data
+0.0.0.0.0.0.0.0.0.0.c.f.ip6.arpa.db
+1.168.192.in-addr.arpa.db
+32.12.in-addr.arpa.db
+9.8.7.6.4.3.2.1.1.0.0.2.ip6.arpa.db
+qa.redzone.com.db
+redzone.com.db
+```
 
 How to Contribute
 -----------------
