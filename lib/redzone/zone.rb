@@ -155,9 +155,11 @@ module RedZone
 
     private
     def sorted_each(hash,&block)
-      keys = hash.keys.sort
-      keys.each do |key|
-        block.call(key,hash[key])
+      unless hash.nil?
+        keys = hash.keys.sort
+        keys.each do |key|
+          block.call(key,hash[key])
+        end
       end
     end
     def symbolize(hash) 
