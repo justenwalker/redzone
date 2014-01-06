@@ -7,4 +7,5 @@ describe RedZone::Zone do
   it "should skip empty cnames"
   it "should skip empty default"
   it "should skip empty wildcard"
+  it "should skip empty records"
 end

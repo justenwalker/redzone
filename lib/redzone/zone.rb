@@ -270,7 +270,7 @@ module RedZone
     end
     def generate_records
       @records = []
-      if @config.has_key?('records')
+      if @config.has_key?('records') and not @config['records'].nil?
         @config['records'].each do |record|
           @records << Record.new(symbolize(record))
         end
