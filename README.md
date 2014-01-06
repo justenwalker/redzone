@@ -1,6 +1,8 @@
 RedZone 
 =======
 
+[![Gem Version](https://badge.fury.io/rb/redzone.png)](http://badge.fury.io/rb/redzone)
+
 Generate BIND zone files from simple yaml configuration.
 
 Introduction
