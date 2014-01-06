@@ -29,7 +29,7 @@ changes would be related to the YAML file syntax.
 Installation
 ------------
 
-TODO: Publish to RubyGems.org
+`gem install redzone`
 
 Usage
 -----
