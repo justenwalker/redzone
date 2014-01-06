@@ -1,4 +1,7 @@
-# RedZone - Generate BIND zone files from simple YAML syntax
+RedZone 
+=======
+
+Generate BIND zone files from simple yaml configuration.
 
 Introduction
 ------------
@@ -21,9 +24,9 @@ This gem was just released (pre 1.0) and is not ready for production use yet.
 During pre 1.0, things may change that break backwards compatibility between releases. Most likely these breaking
 changes would be related to the YAML file syntax.
 
-### Current TODO List
-
-- More test coverage for existing features
+To Do
+-----
+See the [Issue Tracker](https://github.com/justenwalker/redzone/issues)
 
 Installation
 ------------
